@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        border: 2px solid;
+        background-color: brown;
+    }
+    .container{
+        display: flex;
+        border:2px solid black;
+        align-items: start;
+        background-color: pink;
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+    .box{
+        width: 300px;
+        height: 300px;
+        color: black;
+        background-color: yellow;
+        border: 2px solid black;
+        padding: 4px;
+    }
+    body{
+            background-image: url("background.jpeg");
+            scroll-behavior: smooth;
+    }
+   </style>
+<body>
+    <h1>A flexbox</h1>
+    <div class= "container">
+        <div class= "box"><p style= "text-align: center">BOX 1 <a href= "grid.html">GRIDS</a></p></div>
+        <div class= "box"><p style= "text-align: center">BOX 2</p></div>
+        <div class= "box"><p style= "text-align: center">BOX 3</p></div>
+    </div>
+    
+</body>
+</html>

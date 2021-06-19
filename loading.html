@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <style>
+    body{
+        background-image: url("background.jpeg");
+        scroll-behavior: smooth;
+    }
+    .circle{
+        margin: 70px auto;
+        width: 40px;
+        height: 40px;
+        border: 5px solid black;
+        border-radius: 50px;	
+        border-top-color: white;
+        animation: spin 1s linear infinite; /*setting up the spin speed, note that linear keyword has been for distributing time evenly*/ 
+    }
+    @keyframes spin{
+        100%{
+    /*here we are setting up by how many degrees it will rotate and the spin percentage*/
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>     
+     <div class="circle"></div>
+</body>
+</html>
